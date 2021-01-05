@@ -1,8 +1,6 @@
 package at.ac.fhcampuswien;
 
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.Timer;
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.event.ActionListener;
@@ -13,7 +11,6 @@ import java.util.Collections;
 //serial//
 
 public class Board extends JFrame{
-
 
     private List<Card> cards;
     private Card selectedCard;
@@ -62,8 +59,16 @@ public class Board extends JFrame{
         setTitle("Memory Match");
     }
 
+
     public void doTurn(){
+
         if (c1 == null && c2 == null){
+
+            String player1 = JOptionPane.showInputDialog(this, "Your Player Name, Player 1: ", "Choose your Name", 0);
+            String player2 = JOptionPane.showInputDialog(this, "Your Player Name, Player 2: ", "Choose your Name", 0);
+            JOptionPane.showMessageDialog(this, "Turn of: " + player1 );
+            JOptionPane.showMessageDialog(this, "Turn of: " + player2 );
+
             c1 = selectedCard;
             c1.setText(String.valueOf(c1.getId()));
         }
