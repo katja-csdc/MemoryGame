@@ -1,7 +1,8 @@
 package at.ac.fhcampuswien;
 
 import java.awt.Dimension;
-import javax.swing.JFrame;
+import java.util.Scanner;
+import javax.swing.*;
 
 
 class Main {
@@ -13,4 +14,10 @@ class Main {
         b.pack();
         b.setVisible(true);
     }
+    Scanner scanner = new Scanner(System.in);
+    String name;
+    JLabel label = new JLabel(name, JLabel.CENTER);
+label.setVerticalAlignment(JLabel.TOP);
+
+            JLabel.setVisible(true);
 }
