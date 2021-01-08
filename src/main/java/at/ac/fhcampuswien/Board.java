@@ -66,8 +66,8 @@ public class Board extends JFrame{
 
             String player1 = JOptionPane.showInputDialog(this, "Your Player Name, Player 1: ", "Choose your Name", 0);
             String player2 = JOptionPane.showInputDialog(this, "Your Player Name, Player 2: ", "Choose your Name", 0);
-            JOptionPane.showMessageDialog(this, "Turn of: " + player1 );
-            JOptionPane.showMessageDialog(this, "Turn of: " + player2 );
+            JOptionPane.showMessageDialog(this, player1 + "s Turn" );
+            JOptionPane.showMessageDialog(this, player2 + "s Turn" );
 
             c1 = selectedCard;
             c1.setText(String.valueOf(c1.getId()));
